@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const projects = [
         {
             name: 'AI-Powered Customer Service Platform',
-            description: 'Developed a chatbot at Position Green enabling customers to query environmental data using OpenAI API, Langchain, and ChromaDB with FastAPI backend.',
+            description: 'Developed a chatbot at Position Green enabling customers to query environmental data using OpenAI API, Langchain, and ChromaDB with FastAPI. Implemented a RAG solution for efficient data retrieval, transitioned from Streamlit to React for improved user experience, and integrated streaming responses for real-time interaction. The system allowed customers to analyze and understand their environmental data through natural language queries.',
             technologies: ['Python', 'FastAPI', 'OpenAI API', 'ChromaDB', 'React'],
             link: '#'
         },
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'Automated Email Management System',
-            description: 'Web application using Flask and SQLAlchemy for managing company inquiries with automated email handling using Google OAuth & Gmail API.',
+            description: 'Web application using Flask and SQLAlchemy for managing company inquiries with automated email handling using Google OAuth, Gmail API & OpenAI API. The system utilizes multiple specialized ChatGPT assistants to process and categorize incoming emails, automate responses, and streamline communication workflows. Features include email thread tracking, automated tagging, and intelligent response generation based on email context.',
             technologies: ['Flask', 'SQLAlchemy', 'Google OAuth', 'OpenAI API'],
             link: '#'
         },
@@ -70,7 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Trained a Convolutional Neural Network for cat and dog classification, enhanced with transfer learning.',
             technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning'],
             link: '#'
-        }
+        },
+        {
+            name: "Web-Based Interface for SYSCTL's 'DataLock' with Secure Integration",
+            description: "Developed a web application for SYSCTL's 'DataLock' using Django and HTML. The app securely connected to their Linux- based IT - security systems via custom API modules, utilized a SQLite database as both a data storage solution and an intermediate layer for cross - module communication, provided secure file upload and storage for unique customers, tracked and logged scan results, and presented data in a clear interface. Automated script execution via Linux systemd path units and ensured quality through extensive unit and integration testing.",
+            technologies: ['Django', 'SQLite', 'Python', 'HTML/CSS', 'Linux'],
+            link: '#'
+        },
     ];
 
     projects.forEach(project => {
