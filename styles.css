@@ -97,6 +97,43 @@ section h2:after {
     font-size: 0.8em;
 }
 
+/* Soft Skills Section */
+.soft-skill-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.soft-skill-card .card-body {
+    padding: 1.5rem;
+}
+
+.soft-skill-card i {
+    color: #0d6efd;
+    transition: transform 0.3s ease;
+}
+
+.soft-skill-card:hover i {
+    transform: scale(1.1);
+}
+
+.soft-skill-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.soft-skill-card .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
 /* Projects Section */
 #projects .project-card {
     border: none;

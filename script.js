@@ -49,6 +49,66 @@ document.addEventListener('DOMContentLoaded', function () {
         skillsContainer.appendChild(skillCard);
     });
 
+    // Dynamic Soft Skills Section
+    const softSkillsContainer = document.getElementById('soft-skills-container');
+    const softSkills = [
+        {
+            title: 'Communication',
+            description: 'The ability to adapt communication to different audiences and explain complex ideas in an understandable way.',
+            icon: 'fa-comments'
+        },
+        {
+            title: 'Empathy',
+            description: 'The ability to understand and show compassion for others\' needs and challenges.',
+            icon: 'fa-heart'
+        },
+        {
+            title: 'Problem-solving',
+            description: 'Identifying problems and developing solutions, particularly in hectic and fast-changing environments.',
+            icon: 'fa-lightbulb'
+        },
+        {
+            title: 'Collaboration',
+            description: 'The ability to work effectively with others and collaborate across different roles and departments.',
+            icon: 'fa-users'
+        },
+        {
+            title: 'Leadership',
+            description: 'Experience in leading and mentoring others, particularly in helping them develop and solve problems.',
+            icon: 'fa-star'
+        },
+        {
+            title: 'Adaptability',
+            description: 'The ability to adjust to new situations and changing demands.',
+            icon: 'fa-sync-alt'
+        },
+        {
+            title: 'Conflict resolution',
+            description: 'The ability to identify and manage conflicts within a team, finding solutions that satisfy all parties.',
+            icon: 'fa-balance-scale'
+        },
+        {
+            title: 'Patience',
+            description: 'Managing challenging or slow processes without losing focus or becoming frustrated.',
+            icon: 'fa-clock'
+        }
+    ];
+
+    softSkills.forEach(skill => {
+        const skillCard = document.createElement('div');
+        skillCard.className = 'col-md-6 col-lg-3 mb-4';
+        skillCard.innerHTML = `
+            <div class="card h-100 soft-skill-card">
+                <div class="card-body text-center">
+                    <i class="fas ${skill.icon} fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title">${skill.title}</h5>
+                    <p class="card-text">${skill.description}</p>
+                </div>
+            </div>
+        `;
+        softSkillsContainer.appendChild(skillCard);
+    });
+
     // Dynamic Projects Section
     const projectsContainer = document.getElementById('projects-container');
     const projects = [
@@ -87,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Developed an analytical dashboard in Flask, for tracking customer and internal data, stored in a SQLite db and displayed with graphs and tables on the website at SYSCTL',
             technologies: ['Flask', 'SQLite', 'Python', 'HTML/CSS'],
             link: ''
-        },
+        }
 
     ];
 
