@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
             link: '#'
         },
         {
-            name: 'Analytics Dashboard',
-            description: 'Built a Flask-based dashboard for tracking customer and internal data at SYSCTL AB.',
-            technologies: ['Flask', 'SQLite', 'Python', 'HTML/CSS'],
+            name: "Web-Based Interface for SYSCTL's 'DataLock' with Secure Integration",
+            description: "Developed a web application for SYSCTL's 'DataLock' using Django and HTML. The app securely connected to their Linux- based IT - security systems via custom API modules, utilized a SQLite database as both a data storage solution and an intermediate layer for cross - module communication, provided secure file upload and storage for unique customers, tracked and logged scan results, and presented data in a clear interface. Automated script execution via Linux systemd path units and ensured quality through extensive unit and integration testing.",
+            technologies: ['Django', 'SQLite', 'Python', 'HTML/CSS', 'Linux'],
             link: '#'
         },
         {
@@ -72,11 +72,12 @@ document.addEventListener('DOMContentLoaded', function () {
             link: '#'
         },
         {
-            name: "Web-Based Interface for SYSCTL's 'DataLock' with Secure Integration",
-            description: "Developed a web application for SYSCTL's 'DataLock' using Django and HTML. The app securely connected to their Linux- based IT - security systems via custom API modules, utilized a SQLite database as both a data storage solution and an intermediate layer for cross - module communication, provided secure file upload and storage for unique customers, tracked and logged scan results, and presented data in a clear interface. Automated script execution via Linux systemd path units and ensured quality through extensive unit and integration testing.",
-            technologies: ['Django', 'SQLite', 'Python', 'HTML/CSS', 'Linux'],
+            name: 'Analytics Dashboard',
+            description: 'Built a Flask-based dashboard for tracking customer and internal data at SYSCTL AB.',
+            technologies: ['Flask', 'SQLite', 'Python', 'HTML/CSS'],
             link: '#'
         },
+
     ];
 
     projects.forEach(project => {
