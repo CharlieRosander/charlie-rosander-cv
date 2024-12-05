@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const skills = [
         {
             name: 'Backend Development', icon: 'fa-server',
-            details: ['Python', 'Django', 'Flask', 'FastAPI', 'SocketIO', 'Asyncio', 'PyTest']
+            details: ['Python', 'Django', 'Flask', 'FastAPI', 'SocketIO', 'Asyncio', 'FastAPI', 'PyTest', 'Numpy', 'Pandas']
         },
         {
             name: 'AI & Machine Learning', icon: 'fa-brain',
-            details: ['TensorFlow', 'Scikit-learn', 'LangChain', 'LangServe', 'LangSmith', 'OpenAI', 'Numpy', 'Pandas']
+            details: ['TensorFlow', 'Scikit-learn', 'LangChain', 'LangServe', 'LangSmith', 'OpenAI']
         },
         {
             name: 'AI Tools', icon: 'fa-robot',
-            details: ['ChatGPT', 'Gemini', 'Anthropic', 'Github Copilot', 'Flowise']
+            details: ['ChatGPT', 'Gemini', 'Anthropic', 'Mistral', 'Github Copilot', 'Flowise', 'Cursor AI', 'Windsurf']
         },
         {
             name: 'Databases', icon: 'fa-database',
