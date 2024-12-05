@@ -153,6 +153,27 @@ section h2:after {
     font-weight: bold;
 }
 
+/* Collapsible section styles */
+.collapse {
+    transition: all 0.3s ease;
+}
+
+#personalDevelopment {
+    background-color: transparent;
+}
+
+[data-bs-toggle="collapse"] {
+    transition: all 0.2s ease;
+}
+
+[data-bs-toggle="collapse"] .fas {
+    transition: transform 0.2s ease;
+}
+
+[data-bs-toggle="collapse"][aria-expanded="true"] .fas {
+    transform: rotate(180deg);
+}
+
 /* Contact Form */
 #contact {
     background: linear-gradient(135deg, #212529 0%, #343a40 100%);
