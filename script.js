@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'AI-Powered Customer Service Platform',
             description: 'Developed a chatbot at Position Green enabling customers to query environmental data using OpenAI API, Langchain, and ChromaDB with FastAPI. Implemented a RAG solution for efficient data retrieval, transitioned from Streamlit to React for improved user experience, and integrated streaming responses for real-time interaction. The system allowed customers to analyze and understand their environmental data through natural language queries.',
             technologies: ['Python', 'FastAPI', 'OpenAI API', 'ChromaDB', 'React'],
-            link: '#'
+            link: ''
         },
         {
             name: "Web-Based Interface for SYSCTL's 'DataLock' with Secure Integration",
             description: "Developed a web application for SYSCTL's 'DataLock' using Django and HTML. The app securely connected to their Linux- based IT - security systems via custom API modules, utilized a SQLite database as both a data storage solution and an intermediate layer for cross - module communication, provided secure file upload and storage for unique customers, tracked and logged scan results, and presented data in a clear interface. Automated script execution via Linux systemd path units and ensured quality through extensive unit and integration testing.",
             technologies: ['Django', 'SQLite', 'Python', 'HTML/CSS', 'Linux'],
-            link: '#'
+            link: ''
         },
         {
             name: 'WorkHub - An Automated Email Management System',
@@ -73,20 +73,20 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: 'Image Recognition CNN',
             description: 'Image recognition project (cats & dogs), programmed and trained my own model to recognize and classify cats & dogs using CNN. I later improved upon this project using transfer learning with a pretrained model.',
-            technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning'],
+            technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning', 'Matplotlib'],
             link: 'https://github.com/CharlieRosander/Exam-DL/tree/3bb159bf1831a3d1719b870c70cffb21bac33a35'
         },
         {
             name: 'Classification Model Trainer',
             description: 'A tool that simplifies the process of training machine learning models on custom image data. Through a graphical interface, users can easily load their own training images and quickly train powerful image classification models without writing any code. The application supports both binary and categorical classification, while providing instant visualization of training results and model performance through graphs. Users can save their trained models for future use.',
-            technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning'],
+            technologies: ['Python', 'TensorFlow', 'TKInter', 'Keras', 'CNN', 'Transfer Learning', 'Matplotlib'],
             link: 'https://github.com/CharlieRosander/ClassificationModelTrainer/tree/ff7c42eb4e6c51adda00a431e2d79ac199ad58ea'
         },
         {
             name: 'Analytics Dashboard',
-            description: 'Built a Flask-based dashboard for tracking customer and internal data at SYSCTL AB.',
+            description: 'Developed an analytical dashboard in Flask, for tracking customer and internal data, stored in a SQLite db and displayed with graphs and tables on the website at SYSCTL',
             technologies: ['Flask', 'SQLite', 'Python', 'HTML/CSS'],
-            link: '#'
+            link: ''
         },
 
     ];
@@ -97,10 +97,15 @@ document.addEventListener('DOMContentLoaded', function () {
         projectCard.innerHTML = `
             <div class="card project-card h-100">
                 <div class="card-body">
-                    <h5 class="card-title">${project.name}</h5>
+                    <h5 class="card-title">
+                        ${project.link ? `<a href="${project.link}" target="_blank" style="text-decoration: none; color: inherit;">
+                            ${project.name}
+                            <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        </a>` : project.name}
+                    </h5>
                     <p class="card-text">${project.description}</p>
-                    <div class="badge-container mb-2">
-                        ${project.technologies.map(tech => `<span class="badge bg-primary me-1 mb-1">${tech}</span>`).join('')}
+                    <div class="technologies">
+                        ${project.technologies.map(tech => `<span class="badge bg-secondary me-1">${tech}</span>`).join('')}
                     </div>
                 </div>
             </div>
