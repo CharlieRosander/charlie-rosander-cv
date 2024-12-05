@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <i class="fas ${skill.icon} fa-3x mb-3"></i>
                     <h5 class="card-title">${skill.name}</h5>
                     <div class="skill-details">
-                        ${skill.details.map(detail => `<span class="badge bg-secondary m-1">${detail}</span>`).join('')}
+                        ${skill.details.map(detail => `<span class="badge bg-primary m-1">${detail}</span>`).join('')}
                     </div>
                 </div>
             </div>
