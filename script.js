@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'Automated Email Management System',
-            description: 'Web application using Flask and SQLAlchemy for managing company inquiries with automated email handling using Google OAuth, Gmail API & OpenAI API. The system utilizes multiple specialized ChatGPT assistants to process and categorize incoming emails, automate responses, and streamline communication workflows. Features include email thread tracking, automated tagging, and intelligent response generation based on email context.',
+            description: 'A Flask-based application integrating Google OAuth and OpenAI GPT to streamline job searching, email management, and company records. Key features include automated email drafting and regeneration, web scraping and structured storage of job postings, contextual data processing, and a comprehensive company database with autofill capabilities. Designed as a unified solution to enhance and automate the job application process. Currently a work-in-progress.',
             technologies: ['Flask', 'SQLAlchemy', 'Google OAuth', 'OpenAI API'],
             link: '#'
         },
