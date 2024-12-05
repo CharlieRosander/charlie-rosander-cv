@@ -70,22 +70,20 @@ section h2:after {
 }
 
 /* Skills Section */
-#skills .skill-card {
+#skills .card {
     background-color: white;
     border-radius: 15px;
-    padding: 25px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
 }
 
-#skills .skill-card:hover {
+#skills .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-#skills .skill-card i {
+#skills .card i {
     color: #0d6efd;
 }
 

@@ -3,41 +3,46 @@ document.addEventListener('DOMContentLoaded', function () {
     const skillsContainer = document.getElementById('skills-container');
     const skills = [
         {
-            name: 'Backend Development', level: 'Advanced', icon: 'fa-server',
-            details: ['Python', 'SQL', 'Django', 'Flask', 'FastAPI']
+            name: 'Backend Development', icon: 'fa-server',
+            details: ['Python', 'Django', 'Flask', 'FastAPI', 'SocketIO', 'Asyncio', 'PyTest']
         },
         {
-            name: 'AI & Machine Learning', level: 'Advanced', icon: 'fa-brain',
-            details: ['TensorFlow', 'Scikit-learn', 'LangChain', 'OpenAI API']
+            name: 'AI & Machine Learning', icon: 'fa-brain',
+            details: ['TensorFlow', 'Scikit-learn', 'LangChain', 'LangServe', 'LangSmith', 'OpenAI', 'Numpy', 'Pandas']
         },
         {
-            name: 'Databases', level: 'Advanced', icon: 'fa-database',
+            name: 'AI Tools', icon: 'fa-robot',
+            details: ['ChatGPT', 'Gemini', 'Anthropic', 'Github Copilot', 'Flowise']
+        },
+        {
+            name: 'Databases', icon: 'fa-database',
             details: ['MSSQL', 'SQLite', 'PostgreSQL', 'ChromaDB', 'Pinecone']
         },
         {
-            name: 'DevOps & Tools', level: 'Intermediate', icon: 'fa-tools',
-            details: ['Git', 'Docker', 'WSL', 'Postman', 'Jira']
+            name: 'DevOps & Tools', icon: 'fa-tools',
+            details: ['Git', 'Github', 'Gitlab', 'Docker', 'WSL', 'Oracle VM', 'Airflow', 'Postman', 'Jira']
         },
         {
-            name: 'Frontend', level: 'Intermediate', icon: 'fa-code',
-            details: ['HTML', 'CSS', 'JavaScript']
+            name: 'Frontend & Design', icon: 'fa-code',
+            details: ['HTML', 'CSS', 'JavaScript', 'Figma']
         },
         {
-            name: 'Operating Systems', level: 'Advanced', icon: 'fa-laptop-code',
+            name: 'Operating Systems', icon: 'fa-laptop-code',
             details: ['Windows', 'Linux (Ubuntu, Fedora)']
         }
     ];
 
     skills.forEach(skill => {
         const skillCard = document.createElement('div');
-        skillCard.className = 'col-md-4 mb-4';
+        skillCard.className = 'col-md-6 col-lg-4 mb-4';
         skillCard.innerHTML = `
-            <div class="skill-card text-center">
-                <i class="fas ${skill.icon} fa-3x mb-3"></i>
-                <h4>${skill.name}</h4>
-                <p class="text-muted">${skill.level}</p>
-                <div class="skill-details">
-                    ${skill.details.map(detail => `<span class="badge bg-secondary me-1 mb-1">${detail}</span>`).join('')}
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas ${skill.icon} fa-3x mb-3"></i>
+                    <h5 class="card-title">${skill.name}</h5>
+                    <div class="skill-details">
+                        ${skill.details.map(detail => `<span class="badge bg-secondary m-1">${detail}</span>`).join('')}
+                    </div>
                 </div>
             </div>
         `;
