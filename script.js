@@ -65,16 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
             link: '#'
         },
         {
-            name: 'Automated Email Management System',
+            name: 'WorkHub - An Automated Email Management System',
             description: 'A Flask-based application integrating Google OAuth and OpenAI API to streamline job searching, email management, and data organization. Features include multiple GPT assistants tailored for specific tasks such as automated email drafting, content generation, and contextual processing. The platform allows web scraping and storage of job postings, with options to save listings and related applications locally. Users can also manage a database for job applications, track saved job postings, and organize company information with automated naming and data extraction. Designed as a unified solution to enhance and automate the job application process. Currently a work-in-progress.',
             technologies: ['Flask', 'SQLAlchemy', 'Google OAuth', 'OpenAI API'],
-            link: '#'
+            link: 'https://github.com/CharlieRosander/WorkHub/tree/38382636e4352f62c7adb122750ca935b75b2d35'
         },
         {
             name: 'Image Recognition CNN',
             description: 'Image recognition project (cats & dogs), programmed and trained my own model to recognize and classify cats & dogs using CNN. I later improved upon this project using transfer learning with a pretrained model.',
             technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning'],
-            link: '#'
+            link: 'https://github.com/CharlieRosander/Exam-DL/tree/3bb159bf1831a3d1719b870c70cffb21bac33a35'
+        },
+        {
+            name: 'Classification Model Trainer',
+            description: 'A tool that simplifies the process of training machine learning models on custom image data. Through a graphical interface, users can easily load their own training images and quickly train powerful image classification models without writing any code. The application supports both binary and categorical classification, while providing instant visualization of training results and model performance through graphs. Users can save their trained models for future use.',
+            technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning'],
+            link: 'https://github.com/CharlieRosander/ClassificationModelTrainer/tree/ff7c42eb4e6c51adda00a431e2d79ac199ad58ea'
         },
         {
             name: 'Analytics Dashboard',
