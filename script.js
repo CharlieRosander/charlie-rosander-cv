@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </h5>
                     <p class="card-text">${project.description}</p>
                     <div class="technologies">
-                        ${project.technologies.map(tech => `<span class="badge bg-secondary me-1">${tech}</span>`).join('')}
+                        ${project.technologies.map(tech => `<span class="badge bg-primary me-1">${tech}</span>`).join('')}
                     </div>
                 </div>
             </div>
