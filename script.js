@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'Image Recognition CNN',
-            description: 'Trained a Convolutional Neural Network for cat and dog classification, enhanced with transfer learning.',
+            description: 'Image recognition project (cats & dogs), programmed and trained my own model to recognize and classify cats & dogs using CNN. I later improved upon this project using transfer learning with a pretrained model.',
             technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning'],
             link: '#'
         },
