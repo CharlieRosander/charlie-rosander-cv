@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const projects = [
         {
             name: 'AI-Powered Customer Service Platform',
-            description: 'Developed a chatbot at Position Green enabling customers to query environmental data using OpenAI API, Langchain, and ChromaDB with FastAPI. Implemented a RAG solution for efficient data retrieval, transitioned from Streamlit to React for improved user experience, and integrated streaming responses for real-time interaction. The system allowed customers to analyze and understand their environmental data through natural language queries.',
+            description: 'Developed a chatbot that enabled customers to query their environmental data,integrating FastAPI, LangChain agents, vector databases, and a React frontend. The chatbot handled two primary use cases: Database Queries – Customers could retrieve structured environmental data stored in an MSSQL database, leveraging pre-defined queries for precise and controlled responses. Document Retrieval – Users could extract relevant insights from uploaded sustainability reports stored in ChromaDB, using a Retrieval-Augmented Generation (RAG) approach to fetch relevant document excerpts based on their queries. Developed a REST API to manage requests and queries, enabling seamless communication between the frontend and backend. The system employed true streaming (async processing & yielding each chunk) responses, providing real-time feedback to users as they interacted with the chatbot.',
             technologies: ['Python', 'FastAPI', 'OpenAI API', 'ChromaDB', 'React'],
             link: ''
         },
