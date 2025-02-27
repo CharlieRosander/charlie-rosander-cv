@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             link: ''
         },
         {
-            name: "Web-Based Interface for SYSCTL's 'DataLock' with Secure Integration",
+            name: "Web-Based Interface for SYSCTL's 'DataLock'",
             description: "Developed a web application for SYSCTL's 'DataLock' using Django and HTML. The app securely connected to their Linux- based IT - security systems via custom API modules, utilized a SQLite database as both a data storage solution and an intermediate layer for cross - module communication, provided secure file upload and storage for unique customers, tracked and logged scan results, and presented data in a clear interface. Automated script execution via Linux systemd path units and ensured quality through extensive unit and integration testing.",
             technologies: ['Django', 'SQLite', 'Python', 'HTML/CSS', 'Linux'],
             link: ''
@@ -132,9 +132,15 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'Image Recognition CNN',
-            description: 'Image recognition project (cats & dogs), programmed and trained my own model to recognize and classify cats & dogs using CNN. I later improved upon this project using transfer learning with a pretrained model.',
+            description: 'Developed and trained custom CNN models for image and character recognition, including enhancement with transfer learning for classifying cats, dogs, and handwritten characters.',
             technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning', 'Matplotlib'],
             link: 'https://github.com/CharlieRosander/Exam-DL/tree/3bb159bf1831a3d1719b870c70cffb21bac33a35'
+        },
+        {
+            name: 'Machine Learning EDA',
+            description: 'Built a machine learning model in Python to predict the Happiness Index of countries, using EDA, data preprocessing, and models like RandomForest and K-Nearest Neighbors.',
+            technologies: ['Python', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'LinearRegression', 'RandomForestClassifier', 'KNeighborsClassifier'],
+            link: 'https://github.com/CharlieRosander/ML_Exam/tree/a908278d1b15d7ff348fda1bc15ee8049e884ce3'
         },
         {
             name: 'Classification Model Trainer',
@@ -144,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'Analytics Dashboard',
-            description: 'Developed an analytical dashboard in Flask, for tracking customer and internal data, stored in a SQLite db and displayed with graphs and tables on the website at SYSCTL',
+            description: 'Developed a monitoring dashboard app in Flask to track customer software versions and antivirus engines, providing clear insights into outdated installations and helping identify systems in need of updates.',
             technologies: ['Flask', 'SQLite', 'Python', 'HTML/CSS'],
             link: ''
         }
